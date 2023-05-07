@@ -1,2 +1,2 @@
-# spatial_databases-TCC
+# Spatial Database Systems: A Comparative Study
 Undergrad thesis
