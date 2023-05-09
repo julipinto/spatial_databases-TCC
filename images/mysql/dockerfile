@@ -1,0 +1,23 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD="123456"
+ENV MYSQL_DATABASE=""
+ENV MYSQL_USER=""
+ENV MYSQL_PASSWORD=""
+COPY ./scripts.sql /docker-entrypoint-initdb.d/
+
+# Path: images\mysql\scripts.sql
+# CREATE DATABASE giropops;
+# USE giropops;
+# CREATE TABLE IF NOT EXISTS `giropops`.`pessoa` (
+#   `id` INT NOT NULL AUTO_INCREMENT,
+#   `nome` VARCHAR(45) NULL,
+#   `idade` INT NULL,
+#   PRIMARY KEY (`id`));
+# INSERT INTO `giropops`.`pessoa` (`nome`, `idade`) VALUES ('Jeferson', '25');
+# INSERT INTO `giropops`.`pessoa` (`nome`, `idade`) VALUES ('Jeferson', '25');
+# INSERT INTO `giropops`.`pessoa` (`nome`, `idade`) VALUES ('Jeferson', '25');
+
+
+
+
+
